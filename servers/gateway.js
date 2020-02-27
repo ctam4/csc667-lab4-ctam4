@@ -1,7 +1,7 @@
 const express = require('express');
 const httpProxy = require('http-proxy');
 const app = express();
-const port = process.env.PORT || 80;
+const port = process.env.PORT || 3000;
 
 const apiProxy = httpProxy.createProxyServer();
 
@@ -14,14 +14,14 @@ app.all("/api/*", (req, res) => {
   // service1
   console.log(req.path)
   apiProxy.web(req, res, {
-    target: 'http://localhost:3001',
+    target: 'http://0.0.0.0:5000',
   });
 });
 
 app.all("*", (req, res) => {
   // front end server / react
   apiProxy.web(req, res, {
-    target: 'http://localhost:4000',
+    target: 'http://0.0.0.0:4000',
   });
 });
 
