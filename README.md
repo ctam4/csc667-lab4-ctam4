@@ -34,3 +34,4 @@ https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.RegionsAndAvaila
 - Visit your server!
 
 # React Modes
+![proxy](ReactProxies.png)
