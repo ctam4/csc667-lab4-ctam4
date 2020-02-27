@@ -6,6 +6,9 @@
 - Use an effect to fetch counter from server when page loads
 - Reverse proxy to your backend server
 - Fetch and display the current page count
+- Add a visitor log, create a text input for name, and a button
+- When user clicks button, send the name to the back end
+- Display visitor log when page loads, or when new name is inserted
 
 # PRODUCTION BUILD
 - `npm run build` in the client folder
